@@ -8,6 +8,10 @@
     "serve": "14.2.4"
   },
   "scripts": {
-    "start": "serve --listen 5001 ./"
+    "start": "serve --listen 5001 ./",
+    "build": "yarn parcel index.html --no-source-maps --dist-dir docs --public-url https://merefield.github.io/example-widget-loader/"
+  },
+  "devDependencies": {
+    "parcel": "^2.13.0"
   }
 }
